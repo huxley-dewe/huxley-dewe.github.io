@@ -5,9 +5,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&display=swap" rel="stylesheet">
     <title>About HD!</title>
     <style>
+      p {
+        margin: 4px 8px 4px 8px;
+      }
       /* Id selector */ 
       #div1 {
         font-weight: bold;
+        padding: 4px;
       }
       /* use class select*/
       .second {
@@ -34,11 +38,21 @@
         font-weight: 400;
         font-style: normal;
       }
+
+      #div1 p {
+        padding: 8px;
+        margin: 4px;
+        border: 1px solid darkgray;
+        border-radius: 4px;
+      }
     </style>
   </head>
   <body>
-    <div id="div1" class="first red">Lorem ipsum</div>
-    <div id="div2" class="second orange">Lorem ipsum</div>
-    <div id="div3" class="third red">Lorem ipsum</div>
+    <div id="div1" class="first red">
+      <p>First paragraph</p>
+      <p>Second <span class="orange">paragraph</span></p>
+    </div>
+    <div id="div2" class="second orange"><p>Lorem ipsum</p></div>
+    <div id="div3" class="third red"><p>Lorem ipsum</p></div>
   </body>
 </html>
